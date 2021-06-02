@@ -1,0 +1,9 @@
+type Query {
+    cat: Cat
+}
+
+type Cat {
+    name: String
+    friend1: Cat
+    friend2: Cat
+}

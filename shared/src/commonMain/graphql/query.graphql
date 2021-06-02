@@ -1,0 +1,79 @@
+query Cat {
+    cat {
+        ...CatFragment1
+    }
+}
+
+fragment CatFragment1 on Cat {
+    friend1 {
+        ...CatFragment2
+    }
+    friend2 {
+        ...CatFragment2
+    }
+}
+
+fragment CatFragment2 on Cat {
+    friend1 {
+        ...CatFragment3
+    }
+    friend2 {
+        ...CatFragment3
+    }
+}
+
+fragment CatFragment3 on Cat {
+    friend1 {
+        ...CatFragment4
+    }
+    friend2 {
+        ...CatFragment4
+    }
+}
+
+fragment CatFragment4 on Cat {
+    friend1 {
+        ...CatFragment5
+    }
+    friend2 {
+        ...CatFragment5
+    }
+}
+fragment CatFragment5 on Cat {
+    friend1 {
+        ...CatFragment6
+    }
+    friend2 {
+        ...CatFragment6
+    }
+}
+fragment CatFragment6 on Cat {
+    friend1 {
+        ...CatFragment7
+    }
+    friend2 {
+        ...CatFragment7
+    }
+}
+
+fragment CatFragment7 on Cat {
+    friend1 {
+        ...CatFragment8
+    }
+    friend2 {
+        ...CatFragment8
+    }
+}
+
+fragment CatFragment8 on Cat {
+    friend1 {
+        ...CatFragment9
+    }
+    friend2 {
+        ...CatFragment9
+    }
+}
+
+fragment CatFragment9 on Cat {
+    name
+}
