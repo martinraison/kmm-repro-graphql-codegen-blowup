@@ -62,6 +62,7 @@ android {
 apollo {
     rootPackageName.set("com.example.repro.graphql")
     schemaFile.set(File("../graphql/schema.graphql"))
+//    codegenModels.set("compat")
 //    flattenModels.set(true)
 }
 
